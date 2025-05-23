@@ -1,0 +1,38 @@
+[project]
+name = "awsmcp"
+version = "0.1.0"
+description = "AWS Management MCP Server - Manage AWS resources through Model Context Protocol"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.9.1",
+    "boto3",
+    "python-dotenv"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "flake8",
+    "mypy",
+    "build"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "--cov=./ --cov-report=xml -v"
+
+[tool.black]
+line-length = 127
+include = '\.pyi?$'
+
+[tool.coverage.run]
+source = ["."]
+omit = ["tests/*", "setup.py"]
