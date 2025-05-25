@@ -7,7 +7,9 @@ requires-python = ">=3.13"
 dependencies = [
     "mcp[cli]>=1.9.1",
     "boto3",
-    "python-dotenv"
+    "python-dotenv",
+    "paramiko",  # For SSH operations
+    "botocore"   # AWS SDK core
 ]
 
 [project.optional-dependencies]
@@ -36,3 +38,6 @@ include = '\.pyi?$'
 [tool.coverage.run]
 source = ["."]
 omit = ["tests/*", "setup.py"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]

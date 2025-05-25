@@ -38,7 +38,27 @@ htmlcov/
 
 # AWS
 .aws/
+.aws-sam/
+samconfig.toml
+*.aws-credentials
+cloudformation/*.yaml
+!cloudformation/template.yaml
 
 # UV
 .uv/
 uv.lock
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Local development
+.env.local
+.env.*.local
+local_settings.py

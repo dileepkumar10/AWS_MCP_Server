@@ -2,7 +2,7 @@ import pytest
 from unittest.mock import MagicMock, patch
 from datetime import datetime
 import boto3
-from main import create_ec2_instance, delete_ec2_instance, detect_account_type
+from AWS_MCP_Server.main import create_ec2_instance, delete_ec2_instance, detect_account_type
 
 @pytest.fixture
 def mock_ec2():
