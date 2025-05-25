@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AWS MCP Server
 
 [![CI/CD Pipeline](../../actions/workflows/ci-cd.yml/badge.svg)](../../actions/workflows/ci-cd.yml)
@@ -67,3 +68,6 @@ Required AWS credentials:
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 - `AWS_REGION` (defaults to us-east-1)
+=======
+# AWS_MCP_Server
+>>>>>>> aed5dbb2fc5216093009b523111a61c4a6a674e1
