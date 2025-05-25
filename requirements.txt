@@ -1,0 +1,21 @@
+# Core dependencies
+boto3>=1.26.0
+mcp[cli]>=1.0.0
+python-dotenv>=0.19.0
+
+# AWS SDK dependencies
+botocore>=1.29.0
+awscli>=1.27.0
+
+
+# Utilities
+pyyaml>=6.0
+requests>=2.28.0
+typing-extensions>=4.5.0
+
+# Development dependencies
+pytest>=7.3.1
+pytest-cov>=4.1.0
+black>=23.3.0
+flake8>=6.0.0
+mypy>=1.3.0
